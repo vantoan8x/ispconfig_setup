@@ -13,8 +13,8 @@ InstallISPConfig() {
 	cd install
   else
   	echo "Installing version version 3.1.11 ..."
-	wget https://ispconfig.org/downloads/ISPConfig-3.1.11.tar.gz
-	tar xfz ISPConfig-3-stable.tar.gz
+	wget -O ISPConfig-3.1.11.tar.gz https://ispconfig.org/downloads/ISPConfig-3.1.11.tar.gz
+	tar xfz ISPConfig-3.1.11.tar.gz
 	cd ispconfig3_install/install/
   fi
   if [ $CFG_ISPC == "standard" ]; then
