@@ -22,7 +22,7 @@ InstallISPConfig() {
 	echo "language=en" >> autoinstall.ini
 	echo "install_mode=$CFG_ISPC" >> autoinstall.ini
 	echo "hostname=$CFG_HOSTNAME_FQDN" >> autoinstall.ini
-	echo "mysql_hostname=localhost" >> autoinstall.ini
+	echo "mysql_hostname=127.0.0.1" >> autoinstall.ini
 	echo "mysql_root_user=root" >> autoinstall.ini
 	echo "mysql_root_password=$CFG_MYSQL_ROOT_PWD" >> autoinstall.ini
 	echo "mysql_database=dbispconfig" >> autoinstall.ini

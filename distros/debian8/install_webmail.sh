@@ -13,7 +13,7 @@ InstallWebmail() {
 	  echo "roundcube-core roundcube/db/dbname string roundcube" | debconf-set-selections
 	  echo "roundcube-core roundcube/mysql/app-pass password $CFG_ROUNDCUBE_PWD" | debconf-set-selections
 	  echo "roundcube-core roundcube/app-password-confirm password $CFG_ROUNDCUBE_PWD" | debconf-set-selections
-	  echo "roundcube-core roundcube/hosts string localhost" | debconf-set-selections
+	  echo "roundcube-core roundcube/hosts string 127.0.0.1" | debconf-set-selections
 	  backports=$(cat /etc/apt/sources.list | grep jessie-backports | grep -v "#")
 	  if [ -z "$backports" ]; then
 	    echo -e "\n# jessie-backports, previously on backports.debian.org" >> /etc/apt/sources.list
